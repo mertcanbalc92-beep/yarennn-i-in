@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Senin İçin ❤️</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#0b0f2b;
+font-family:sans-serif;
+flex-direction:column;
+color:white
+}
+
+.flower{
+position:relative;
+width:220px;
+height:220px
+}
+
+.petal{
+position:absolute;
+width:110px;
+height:110px;
+background:#4c6fff;
+border-radius:50%;
+top:55px;
+left:55px;
+transform-origin:center bottom;
+animation:bloom 2s forwards
+}
+
+.p1{transform:rotate(0deg) translateY(-80px)}
+.p2{transform:rotate(72deg) translateY(-80px)}
+.p3{transform:rotate(144deg) translateY(-80px)}
+.p4{transform:rotate(216deg) translateY(-80px)}
+.p5{transform:rotate(288deg) translateY(-80px)}
+
+.center{
+position:absolute;
+width:60px;
+height:60px;
+background:#ffd43b;
+border-radius:50%;
+top:80px;
+left:80px;
+animation:show 2s forwards
+}
+
+.message{
+margin-top:40px;
+font-size:30px;
+opacity:0;
+animation:text 3s forwards 2s;
+text-align:center
+}
+
+@keyframes bloom{
+0%{opacity:0;transform:scale(0)}
+100%{opacity:1}
+}
+
+@keyframes show{
+0%{opacity:0}
+100%{opacity:1}
+}
+
+@keyframes text{
+to{opacity:1}
+}
+</style>
+</head>
+
+<body>
+
+<div class="flower">
+<div class="petal p1"></div>
+<div class="petal p2"></div>
+<div class="petal p3"></div>
+<div class="petal p4"></div>
+<div class="petal p5"></div>
+<div class="center"></div>
+</div>
+
+<div class="message">
+Seni Çok Seviyorum ❤️
+</div>
+
+</body>
+</html>
